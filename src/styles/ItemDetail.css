@@ -1,0 +1,38 @@
+/* Estilos para ItemDetail */
+
+.item-detail {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 2rem;
+  background-color: #fff8f0;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.item-detail img {
+  max-width: 400px;
+  width: 100%;
+  border-radius: 8px;
+}
+
+.item-detail .details {
+  flex: 1;
+}
+
+.item-detail h2 {
+  margin-top: 0;
+  font-size: 2rem;
+  color: #8B0000;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .item-detail {
+    flex-direction: column;
+  }
+
+  .item-detail img {
+    max-width: 100%;
+  }
+}

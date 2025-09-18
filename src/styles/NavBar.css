@@ -1,0 +1,60 @@
+/* Estilos para NavBar */
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #8B0000;
+  color: #f5f5dc;
+  padding: 1rem 2rem;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  font-family: 'Georgia', serif;
+}
+
+nav .logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+nav ul li:hover {
+  color: #fff8f0;
+}
+
+/* CartWidget dentro del NavBar */
+.cart-widget {
+  position: relative;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.cart-widget .cart-badge {
+  position: absolute;
+  top: -8px;
+  right: -10px;
+  background-color: #f5f5dc;
+  color: #8B0000;
+  border-radius: 50%;
+  padding: 0 6px;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  nav ul {
+    flex-direction: column;
+    width: 100%;
+  }
+}
