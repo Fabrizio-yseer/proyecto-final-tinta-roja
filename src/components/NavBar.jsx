@@ -11,9 +11,9 @@ export default function NavBar() {
       </div>
       <ul>
         <li><Link to="/">Catálogo</Link></li>
-        <li><Link to="/categoria/Clásicos">Clásicos</Link></li>
-        <li><Link to="/categoria/Ficción">Ficción</Link></li>
-        <li><Link to="/categoria/Ensayo">Ensayo</Link></li>
+        <li><Link to="/categoria/novela">Novela</Link></li>
+        <li><Link to="/categoria/épica">Épica</Link></li>
+        <li><Link to="/categoria/poesía">Poesía</Link></li>
       </ul>
       <CartWidget />
     </nav>

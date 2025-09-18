@@ -1,17 +1,16 @@
-# Node modules (dependencias)
+
 node_modules/
 
-# Archivos de build
+
 build/
 
-# Archivos de logs
+
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-# Variables de entorno (credenciales, keys)
+
 .env
 
-# Sistema operativo o IDE
 .DS_Store
 .vscode/

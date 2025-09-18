@@ -1,0 +1,46 @@
+
+.item-count {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  font-family: 'Georgia', serif;
+}
+
+.item-count button {
+  background-color: #8B0000; 
+  color: #f5f5dc; 
+  border: none;
+  padding: 0.5rem 0.75rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.item-count button:hover {
+  background-color: #a00000;
+  transform: translateY(-2px);
+}
+
+.item-count span {
+  font-size: 1.1rem;
+  width: 2rem;
+  text-align: center;
+}
+
+.btn {
+  margin-left: 1rem;
+}
+
+.out-of-stock {
+  color: #e53935; 
+  font-weight: bold;
+  margin-top: 0.5rem;
+}
+
+.added-message {
+  color: #008000; 
+  font-weight: bold;
+  margin-top: 0.5rem;
+}

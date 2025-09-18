@@ -1,4 +1,4 @@
-/* Estilos para ItemList */
+
 
 .item-list {
   display: grid;
@@ -10,7 +10,7 @@
 }
 
 .item-card {
-  background-color: #fff8f0; /* tono marfil/beige, estilo clásico */
+  background-color: #fff8f0; 
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   overflow: hidden;
@@ -46,12 +46,12 @@
 
 .item-card .price {
   font-weight: bold;
-  color: #8B0000; /* rojo oscuro para resaltar precio */
+  color: #8B0000; 
   margin: 1rem;
   font-size: 1.1rem;
 }
 
-/* Responsivo */
+
 @media (max-width: 768px) {
   .item-list {
     grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));

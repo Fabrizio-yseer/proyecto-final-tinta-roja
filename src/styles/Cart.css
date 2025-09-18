@@ -1,4 +1,4 @@
-/* ==== Carrito ==== */
+
 .cart-container {
   max-width: 800px;
   margin: 2rem auto;
@@ -15,7 +15,7 @@
   font-size: 1.8rem;
 }
 
-/* ==== Lista de productos ==== */
+
 .cart-list {
   list-style: none;
   padding: 0;
@@ -52,7 +52,6 @@
   transform: scale(1.2);
 }
 
-/* ==== Total ==== */
 h3 {
   text-align: right;
   margin-top: 1rem;
@@ -61,7 +60,6 @@ h3 {
   font-weight: bold;
 }
 
-/* ==== Acciones ==== */
 .cart-actions {
   display: flex;
   justify-content: space-between;
@@ -85,7 +83,6 @@ h3 {
   transform: translateY(-2px);
 }
 
-/* ==== Carrito vacío ==== */
 .cart-empty {
   text-align: center;
   margin-top: 3rem;
@@ -105,7 +102,7 @@ h3 {
   color: #ff5722;
 }
 
-/* ==== Responsive ==== */
+
 @media (max-width: 600px) {
   .cart-item {
     flex-direction: column;
