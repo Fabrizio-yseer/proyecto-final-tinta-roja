@@ -1,46 +1,53 @@
-// src/components/Cart.jsx
 import React from "react";
 import { Link } from "react-router-dom";
 import { useCart } from "../context/CartContext";
 import "../styles/Cart.css";
 
 export default function Cart() {
-  const { cart, clearCart } = useCart();
-
-  // función para calcular el total
-  const cartTotal = () => {
-    return cart.reduce((acc, item) => acc + item.price * (item.quantity || 1), 0);
-  };
+  const { cart, clearCart, removeItem, totalPrice } = useCart();
 
   if (cart.length === 0) {
     return (
       <div className="cart-empty">
         <p>No tienes productos en el carrito 🛒</p>
-        <Link to="/">Volver a la tienda</Link>
+        <Link to="/" className="btn-back">
+          Volver a la tienda
+        </Link>
       </div>
     );
   }
 
   return (
     <div className="cart-container">
-      <h2>Tu carrito</h2>
+      <h2>🛍️ Tu carrito</h2>
+
       <ul className="cart-list">
         {cart.map((item) => (
           <li key={item.id} className="cart-item">
-            <span>{item.title}</span>
-            <span>Cantidad: {item.quantity || 1}</span>
-            <span>Precio: ${item.price}</span>
-            <span>Subtotal: ${item.price * (item.quantity || 1)}</span>
+            <div className="cart-item-info">
+              <strong>{item.title}</strong>
+              <p>Cantidad: {item.quantity}</p>
+              <p>Precio: S/ {item.price}</p>
+              <p>Subtotal: S/ {item.price * item.quantity}</p>
+            </div>
+            <button
+              className="btn-remove"
+              onClick={() => removeItem(item.id)}
+            >
+              ❌ Eliminar
+            </button>
           </li>
         ))}
       </ul>
 
-      <h3>Total: ${cartTotal()}</h3>
+      <h3 className="cart-total">Total: S/ {totalPrice()}</h3>
 
       <div className="cart-actions">
-        <button onClick={clearCart}>Vaciar carrito</button>
+        <button className="btn-clear" onClick={clearCart}>
+          🗑️ Vaciar carrito
+        </button>
         <Link to="/checkout">
-          <button>Finalizar compra</button>
+          <button className="btn-checkout">✅ Finalizar compra</button>
         </Link>
       </div>
     </div>
